@@ -1,9 +1,13 @@
 import React from 'react'
 
-function FullName() {
+function FullName({name}) {
   return (
-    <p>Ibtissam El Jamii</p>
+    <p>{name} El Jamii</p>
   )
 }
+
+FullName.defaultProps = {
+  name: "Mehdi"
+ };
 
 export default FullName
